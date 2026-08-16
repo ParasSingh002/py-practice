@@ -13,6 +13,20 @@
 
 try:
     num=int(input("enter a number : "))
-    
+    if num>0:
+        temp=0
+        n=1
+        while n<num:
+            if num%n==0:
+                temp+=n
+            n+=1
+        if temp==num:
+            print("Perfect Number")
+        else:
+            print("Not a perfect number")
+    else:
+        print("please enter positive numbers only")
+
 except ValueError:
     print("enter a valid number!!")
+    
