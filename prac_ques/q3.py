@@ -7,14 +7,12 @@
 # prints the resulting sentence
 
 sentence=input("enter a sentence : ")
-sentence=sentence.lstrip()
-print(sentence.lstrip())
+sentence=sentence.strip()
 
 sentence=sentence.lower()
-print(sentence)
 
 word=sentence.split()
-print(len(word))
+print(f"Total number of words are : {len(word)}")
 
 print(sentence.startswith("python"))
 

@@ -6,37 +6,33 @@
 # "Pass" if every subject is at least 40
 # "Fail" otherwise
 
-name=input("enter your name : ")
 while True:
-    if name.isalnum !=True:
-        maths=int(input("enter your marks in maths out of 100 : "))
-        try:
-            if maths<=100 and maths>=0:
-                sci=int(input("enter your marks in science out of 100 : "))
+    name=input("Please enter your name : ")
+    if name.replace(" ","").isalpha():
+        break
+    print("please enter a valid name!!")
 
-                if sci<=100 and sci>=0:
-                    eco=int(input("enter your marks in eco out of 100 : "))
+while True:
+    try:
+        maths=int(input("enter maths marks out of 100 : "))
+        sci=int(input("enter science marks out of 100 : "))
+        eco=int(input("enter economics marks out of 100 : "))
 
-                    if eco<=100 and eco>=0:
-                        print(name)
-                        print("your total marks out of 300 is : ",maths+sci+eco)
-                        print("your average marks is : ",(maths+sci+eco)/3)
+        if 0<=maths<=100 and 0<=sci<=100 and 0<=eco<=100:
+            break
+        print("please enter number between 0 to 100 only") 
 
-                        if maths>=40 and sci>=40 and eco>=40:
-                            print("PASS")
-                        else:
-                            print("FAIL")
-                        break
-                    
-                    else:
-                        print("please enter a valid number")
-                else:
-                    print("please enter a valid number")
-            else:
-                print("please enter a valid number")
+    except ValueError:
+        print("please enter a valid number!!")
 
-        except ValueError:
-            print("please enter numerical value only")
+total = maths + sci + eco
+average = total / 3
 
-    else:
-        print("please enter a valid name!")
+print("\nName:", name)
+print("Total marks out of 300:", total)
+print("Average:", round(average,2))
+
+if maths >= 40 and sci >= 40 and eco >= 40:
+    print("PASS")
+else:
+    print("FAIL")
