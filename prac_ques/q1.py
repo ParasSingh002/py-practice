@@ -10,9 +10,6 @@ length=len(line)
 print(length)
 
 print(line[0:3])
-print(line[0:3])
-print(line[0:3])
-print(line[0:3])
 
 #print(line[length-1:length-4:-1])  prints last 3 in rev
 print(line[-3:])  #prints last 3 normally
