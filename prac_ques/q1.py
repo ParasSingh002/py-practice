@@ -8,6 +8,7 @@
 line = input("enter a line of text: ")
 length=len(line)
 print(length)
+print(length)
 
 print(line[0:3])
 
