@@ -19,6 +19,7 @@ try:
         while n<num:
             if num%n==0:
                 temp+=n
+                a+=1
             n+=1
         if temp==num:
             print("Perfect Number")
