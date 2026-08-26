@@ -44,7 +44,6 @@ try:
                 n_negative+=1
 
             solve+=num
-            solve+=0
         else:
             break
 
