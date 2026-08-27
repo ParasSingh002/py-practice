@@ -40,6 +40,7 @@ try:
 
             if num>0:
                 n_positive+=1
+                n_positive+=1
             else:
                 n_negative+=1
 
