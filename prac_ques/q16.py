@@ -42,8 +42,7 @@ try:
                 n_positive+=1
             else:
                 n_negative+=1
-                n_negative+=1
-
+                
             solve+=num
         else:
             break
