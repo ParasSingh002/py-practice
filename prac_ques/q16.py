@@ -20,7 +20,6 @@ min2=None
 solve=0
 n_positive=0
 n_negative=0
-n_negative=0
 i=0
 try:
     while True:
